@@ -1,0 +1,362 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: rgb(42, 42, 38);
+}
+
+.nav-container {
+  display: flex;
+  padding: 2rem 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: yellow;
+}
+
+.nav-container .logo span {
+  color: white;
+  font-style: italic;
+}
+
+.nav-container p {
+  color: white;
+}
+
+.nav-container .link a {
+  font-size: large;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.nav-container .link a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0;
+  border-bottom: 2px solid yellow;
+  transform: scaleX(0);
+  transition: 0.2s ease;
+}
+
+.nav-container .link a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-container .link a:hover {
+  color: yellow;
+}
+
+.desc-container {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+span {
+  color: yellow;
+  font-style: italic;
+}
+
+.desc {
+  color: white;
+  width: 50%;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.desc-container .desc a {
+  color: yellow;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+img {
+  width: 250px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.btn {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  gap: 2rem;
+  max-width: 100;
+  height: 70vh;
+  padding-top: 2rem;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.card-2 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 50px;
+  transition: 0.1s ease;
+}
+.card-1 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 50px;
+  transition: 0.1s ease;
+}
+.card0 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 50px;
+  transition: 0.1s ease;
+}
+.card0-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card-1-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card-2-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card1 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 50px;
+  transition: 0.1s ease;
+}
+.card-2:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+.card-1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+.card0:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+.card1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+.card2:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+.card3:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+.card4:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+
+.card1-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 50px;
+  padding: 2rem;
+  transition: 0.1s ease;
+}
+.card2-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card3 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 50px;
+  transition: 0.1s ease;
+}
+.card3-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card4 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: black;
+  padding: 2rem;
+  transition: 0.1s ease;
+}
+.card4-isi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+button {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+button:hover {
+  background-color: rgb(204, 204, 204);
+}
+.card-container h2 {
+  color: white;
+}
+
+.logo-footer {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 1rem;
+
+}
+
+.logo-footer h1 {
+  color: white;
+}
+
+.logo-footer p {
+  color: white;
+}
+
+.logo-footer .social .links {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo-footer .social .links a {
+  color: white;
+}
+
+.credit a {
+  color: white;
+}
+
+.logo-footer h2 {
+  color: yellow;
+}
+
+.credito {
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  p {
+    display: block;
+  }
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  p {
+    display: block;
+    text-align: center;
+  }
+  .nav-container {
+    align-items: center;
+    font-size: 13px;
+    justify-content: space-between;
+  }
+  .link {
+    justify-content: center;
+  }
+  .card-container {
+    flex-wrap: wrap;
+    padding-top: 4rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .nav-container .logo {
+    font-size: 20px;
+  }
+  .nav-container {
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .nav-container p{
+    font-size: 10px;
+  }
+  .link li {
+    margin: 10px 0;
+  }
+  .nav-container .navin {
+    display: none;
+  }
+  .card-container {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 4rem;
+    gap: 4rem;
+  }
+  .desc-container .desc p {
+    font-size: 10px;
+  }
+}

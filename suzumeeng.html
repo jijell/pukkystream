@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUZUME NO TOJIMARI</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <ul class="links">
+        <li class="link"><a href="index.html">HOME</a></li>
+        <li class="link"><a href="#logo-footer">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="content-container">
+      <br />
+      <img src="img/suzume no tojimari.jpg" alt="" />
+      <br />
+      <h1>SUZUME NO TOJIMARI</h1>
+      <p>
+        As the skies turn red and the planet trembles, Japan stands on the brink
+        of disaster. However, a determined teenager named Suzume sets out on a
+        mission to save her country. Able to see supernatural forces that others
+        cannot, it's up to her to close the mysterious doors that are spreading
+        chaos across the land. A perilous journey awaits as the fate of Japan
+        rests on her shoulders.
+      </p>
+      <p class="imdb"><i data-feather="star"></i>8.3/10 MyAnimeList</p>
+    </div>
+    <div class="vid">
+      <iframe
+        id="videoFrame"
+        src="https://drive.google.com/file/d/1OCyaTxp1QYpAN_wjpE81dqax2_1SM5OA/preview"
+      ></iframe>
+      <button class="fullscreen-button" onclick="toggleFullscreen()">
+        Fullscreen
+      </button>
+      <h4>
+        use this button if fullscreen button on the video doesn't work
+      </h4>
+    </div>
+    <br /><br />
+    <footer>
+      <div id="logo-footer" class="logo-footer">
+        <h1 class="logo">PUKKY<span>STREAM</span>.</h1>
+        <p>find me on</p>
+        <div class="social">
+          <ul class="links">
+            <li class="link">
+              <a href="https://instagram.com/_azizle"
+                ><i data-feather="instagram"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a
+                href="https://www.facebook.com/share/kQuuMPs4g23XLcJJ/?mibextid=qi2Omg"
+                ><i data-feather="facebook"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="https://youtube.com/@AzizleAMV"
+                ><i data-feather="youtube"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href=""><i data-feather="twitter"></i></a>
+            </li>
+            <li class="link">
+              <a href="https://wa.me/+6289614406368"
+                ><i data-feather="message-circle"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="mailto:slayserz567@gmail.com"
+                ><i data-feather="mail"></i
+              ></a>
+            </li>
+            <li class="link">
+              <a href="https://github.com"><i data-feather="github"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p class="credito">credit to</p>
+        <div class="credit">
+          <ul>
+            <li>
+              <a href="#"><h4>samehadaku</h4></a>
+            </li>
+            <li>
+              <a href="#"><h4>animeheaven</h4></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleFullscreen() {
+        const iframe = document.getElementById("videoFrame");
+        if (!document.fullscreenElement) {
+          if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+          } else if (iframe.mozRequestFullScreen) {
+            iframe.mozRequestFullScreen();
+          } else if (iframe.webkitRequestFullscreen) {
+            iframe.webkitRequestFullscreen();
+          } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+          }
+        }
+      }
+    </script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
